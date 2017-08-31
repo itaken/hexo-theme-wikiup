@@ -30,6 +30,8 @@ $ npm install hexo-renderer-sass --save
 
 3) 修改 `_config.yml` 中的 `theme` 为 `wikiup`.
 
+![wikiup](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/snapshot.png)
+
 ## 配置 ##
 
 ```
