@@ -1,0 +1,25 @@
+<footer>
+    <p>
+        <% if (config.author){ %>
+        <%= new Date().getFullYear() %>&nbsp;&copy;&nbsp;<%= config.author %>
+        <% } else { %>
+        <%= new Date().getFullYear() %>&nbsp;&copy;&nbsp;<%= config.title %>
+        <% } %>
+        . Theme by <a href="https://github.com/itaken/hexo-theme-wikiup/" title="Hexo-Theme-Wikiup" target="_blank">Wikiup</a>.
+    </p>
+    <p>
+        <!-- analytics -->
+        <%- partial('google_analytics') %>
+    </p>
+</footer>
+<script src="<%- config.root %>js/search.js"></script>
+<% if (config.search) { %>
+   <script type="text/javascript">
+     var search_path = "<%= config.search.path %>";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "<%= config.root %>" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+<% } %>

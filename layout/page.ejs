@@ -1,0 +1,14 @@
+<div class="page-header">
+    <label class="brand"><%= config.title %></label>
+    <a href="<%= config.root %>" title="Home" alt="Home">
+        <lebal class="glyphicon glyphicon-screenshot home"></lebal>
+    </a>
+    <h1 class="title"><%= page.title %></h1>
+    <span class="date" id="title-date"><i class="glyphicon glyphicon-time"></i> <%= page.date.format(config.date_format) %></span>
+</div>
+<div class="container">
+    <div class="row page">
+        <%- page.content %>
+    </div><!-- row -->
+    <%- partial('_partial/pagination', {item: page}) %>
+</div>

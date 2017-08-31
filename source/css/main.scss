@@ -1,0 +1,30 @@
+// 主样式
+
+// 定义支持的浏览器
+$supported-browsers: chrome,firefox,ie,opera,safari;
+// 定义最低支持浏览器版本
+$browser-minimum-versions:("ie":"8");
+
+// 字体 图标
+// @import "font-awesome/css/font-awesome.min.css";
+
+@import "bootstrap-3.3.7/css/bootstrap.min.css";
+
+// 代码高亮
+@import "highlight.css";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'lucida grande','lucida sans unicode',lucida,helvetica,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif,'Verdana', 'SimSun';
+    background: #fffefa;
+    width: 100%;
+    // overflow: hidden;
+    overflow-x: hidden;
+}
+
+// 首页
+@import "homepage.scss";
+
+// 文章页
+@import "article.scss";

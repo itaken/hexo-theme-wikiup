@@ -1,0 +1,73 @@
+// 文章样式
+.page-header{
+    display: block;
+    clear: both;
+    user-select: none;
+    .brand{
+        position: absolute;
+        z-index: -99;
+        font-size: 5em;
+        color: #7fffd4;
+        opacity: 0.1;
+        right: 10px;
+    }
+    .home{
+        float: left;
+        font-size: 3em;
+        margin: 0 10px;
+        cursor: pointer;
+        color: #ccc;
+        border-right: 1px solid #ccc;
+        padding-right: 10px;
+        &:hover{
+            color: #27ae60;
+        }
+    }
+    .title{
+        // width: 90%;
+        margin: 0 auto;
+        color: #27ae60;
+        font-weight: 700;
+    }
+    .date{
+        float: right;
+        margin: 8px 10px 0 0;
+        font-size: 1.3em;
+        color: #777;
+        cursor: default;
+    }
+}
+.row{
+    p{
+        color: #3a3a3a;
+    }
+    &>table{
+        thead{
+            user-select: none;
+            background: #f1f9ff;
+            cursor: default;
+        }
+        tr{
+            &:hover{
+                background: #f1f9ff;
+            }
+        }
+        th,td{
+            border: 1px solid #c6cede;
+            border-collapse: collapse;
+            padding: 7px;
+        }
+    }
+}
+// 底部页码
+div.pagination{
+    text-align: center;
+    width: 100%;
+    margin: 30px auto 60px auto;
+    li{
+        font-size: 20px;
+        .glyphicon{
+            margin: 0 5px;
+        }
+    }
+}
