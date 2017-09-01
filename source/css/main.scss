@@ -28,3 +28,18 @@ body{
 
 // 文章页
 @import "article.scss";
+
+// 底部
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    user-select: none;
+    cursor: default;
+    p{
+        float: right;
+        margin: 0 15px 5px 0;
+        color: #deb887;
+    }
+}

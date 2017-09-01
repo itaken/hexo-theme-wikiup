@@ -28,6 +28,10 @@
         margin: 0 auto;
         color: #27ae60;
         font-weight: 700;
+        cursor: default;
+        &:hover{
+            color: #1a0dab;
+        }
     }
     .date{
         float: right;
