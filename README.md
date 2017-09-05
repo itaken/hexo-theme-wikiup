@@ -1,7 +1,7 @@
 Hexo-Theme-Wikiup
 ===
 
-本主题, 基于[wixo](https://github.com/wzpan/hexo-theme-wixo/)
+The theme is built based on [wixo](https://github.com/wzpan/hexo-theme-wixo/)
 
 ## Requirements ##
 
@@ -12,7 +12,7 @@ Hexo-Theme-Wikiup
 * hexo-renderer-marked >= 0.3
 * hexo-renderer-sass >= 0.3
 
-## 安装 ##
+## Install ##
 
 1) install theme:
 
@@ -28,11 +28,13 @@ $ npm install hexo-generator-search --save
 $ npm install hexo-renderer-sass --save
 ```
 
-3) 修改 `_config.yml` 中的 `theme` 为 `wikiup`.
+3) modify theme setting in your `_config.yml` to`wikiup`.
+
+## Snapshot ##
 
 ![wikiup](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/snapshot.png)
 
-## 配置 ##
+## Configuration ##
 
 ```
 rss: atom.xml
@@ -47,4 +49,4 @@ search:
 
 ## License ##
 
-本主题使用 [MIT License](http://opensource.org/licenses/MIT).
+under [MIT License](http://opensource.org/licenses/MIT).
