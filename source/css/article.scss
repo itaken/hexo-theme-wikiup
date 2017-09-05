@@ -44,6 +44,7 @@
 .row{
     p{
         color: #3a3a3a;
+        font-size: 14px;
     }
     &>table{
         thead{
@@ -62,6 +63,38 @@
             padding: 7px;
         }
     }
+    blockquote{
+        background: #f5f9fd;
+        margin: 2px;
+        padding: 8px 10px;
+    }
+    // 代码高亮
+    .highlight{
+        margin: 2px;
+        padding: 5px;
+        border-radius: 0px;
+        font-size: 14px;
+        // 行数
+        .gutter{
+            user-select: none;
+            cursor: default;
+            pre{
+                padding: 0;
+                margin: 0 5px;
+            }
+            .line{
+                 color: #999;
+            }
+        }
+        .code{
+            .line{
+                font-size: 14px;
+            }
+        }
+    }
+    code{
+        background: #fff8dc;
+    }
 }
 // 底部页码
 div.pagination{
@@ -69,7 +102,7 @@ div.pagination{
     width: 100%;
     margin: 30px auto 60px auto;
     li{
-        font-size: 20px;
+        font-size: 15px;
         .glyphicon{
             margin: 0 5px;
         }

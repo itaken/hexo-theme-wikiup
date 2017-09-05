@@ -1,3 +1,11 @@
+# Site
+title: Wiki Pages
+subtitle: Mine Wiki
+description:
+author: itaken
+language: zh-CN
+
+
 rss: atom.xml
 fancybox: true
 favicon: favicon.ico
