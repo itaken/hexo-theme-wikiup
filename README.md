@@ -1,7 +1,7 @@
 Hexo-Theme-Wikiup
 ===
 
-The theme is built based on [wixo](https://github.com/wzpan/hexo-theme-wixo/)
+The theme is built based on [wixo](https://github.com/wzpan/hexo-theme-wixo/).
 
 ## Requirements ##
 
@@ -10,7 +10,7 @@ The theme is built based on [wixo](https://github.com/wzpan/hexo-theme-wixo/)
 * hexo-generator-tag >= 0.2
 * hexo-renderer-ejs >= 0.3
 * hexo-renderer-marked >= 0.3
-* hexo-renderer-sass >= 0.3
+* hexo-renderer-sass >= 0.3 ( for development )
 
 ## Install ##
 
@@ -32,7 +32,7 @@ $ npm install hexo-renderer-sass --save
 
 ## Snapshot ##
 
-![wikiup](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/snapshot.png)
+![wikiup snapshot](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/snapshot.png)
 
 ## Configuration ##
 

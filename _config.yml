@@ -1,15 +1,16 @@
-# Site
-title: Wiki Pages
-subtitle: Mine Wiki
-description:
-author: itaken
+# Site settings
+title: Hexo Wiki
+subtitle: WIKI PAGES
+description: This is wiki themes demo
+author: your-name
 language: zh-CN
 
-
+# Themes settings
 rss: atom.xml
-fancybox: true
 favicon: favicon.ico
-inverse_sort: false  # Whether to sort all notes inversely
 fold: false  # Whether to fold all the notebooks initially
 scratch_name: Scratch  # Notebook name of posts without categories variables
 google_analytics:
+search:
+  path: search.xml
+  field: all
