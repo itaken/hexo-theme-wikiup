@@ -29,7 +29,9 @@ $ npm install hexo-renderer-sass --save
 
 ## Snapshot ##
 
-![wikiup snapshot](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/snapshot.png)
+![wikiup homepage snapshot](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/snapshot.png)
+
+![wikiup article page](https://raw.githubusercontent.com/itaken/hexo-theme-wikiup/master/article.png)
 
 ## Configuration ##
 
