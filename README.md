@@ -7,9 +7,6 @@ The theme is built based on [wixo](https://github.com/wzpan/hexo-theme-wixo/).
 
 * Hexo >= 3.0
 * hexo-generator-search >= 2.1
-* hexo-generator-tag >= 0.2
-* hexo-renderer-ejs >= 0.3
-* hexo-renderer-marked >= 0.3
 * hexo-renderer-sass >= 0.3 ( for development )
 
 ## Install ##

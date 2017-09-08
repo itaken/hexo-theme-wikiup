@@ -1,10 +1,19 @@
-<div class="page-header">
-    <label class="brand"><%= config.title %></label>
-    <a href="<%= config.root %>" title="Home" alt="Home">
-        <lebal class="glyphicon glyphicon-th-list home"></lebal>
-    </a>
-    <h1 class="title"><%= page.title %></h1>
-    <time class="date" datetime="<%= page.date %>"><i class="glyphicon glyphicon-time"></i>&nbsp;<%= page.date.format(config.date_format) %></time>
+<div class="container-fluid">
+    <div class="row">
+        <div class="page-header">
+            <h1>
+                <a href="<%= config.root %>" title="Home" alt="Home">
+                    <lebal class="glyphicon glyphicon-th-list home"></lebal>
+                </a>
+                <a href="<%= page.url %>"><%= page.title %></a>
+                <small class="text-right">
+                    <time datetime="<%= page.date %>">
+                        <i class="glyphicon glyphicon-time"></i>&nbsp;<%= page.date.format(config.date_format) %>
+                    </time>
+                </small>
+            </h1>
+        </div>
+    </div>
 </div>
 <div class="container">
     <div class="row page">

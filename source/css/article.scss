@@ -1,52 +1,58 @@
-// 文章样式
+// 文章标题样式
 .page-header{
     display: block;
     clear: both;
     user-select: none;
-    .brand{
-        position: absolute;
-        z-index: -99;
-        font-size: 5em;
-        color: #7fffd4;
-        opacity: 0.1;
-        right: 10px;
+    h1{
+        a{
+            color: #27ae60;
+            cursor: pointer;
+            &:hover{
+                color: #337ab7;
+            }
+        }
     }
     .home{
         float: left;
-        font-size: 3em;
         margin: 0 10px;
         cursor: pointer;
-        color: #ccc;
+        color: #999;
         border-right: 1px solid #ccc;
         padding-right: 10px;
         &:hover{
             color: #27ae60;
         }
     }
-    .title{
-        // width: 90%;
-        margin: 0 auto;
-        color: #27ae60;
-        font-weight: 700;
-        cursor: default;
-        &:hover{
-            color: #1a0dab;
-        }
-    }
-    .date{
+    time{
+        font-size: 14px;
         float: right;
-        margin: 8px 10px 0 0;
-        font-size: 1.3em;
-        color: #777;
+        margin-right: 10px;
+        color: #ccc;
         cursor: default;
     }
 }
-.row{
+// 文章内容
+.page{
     p{
-        color: #3a3a3a;
+        color: #333;
         font-size: 14px;
+        margin: 2px 0;
+    }
+    del{
+        color: #999;
+    }
+    h2{
+        border-bottom: 1px solid #ccc;
+        padding: 2px 0 5px 0;
+    }
+    h3{
+        color: #444;
+    }
+    h4{
+        color: #666;
     }
     &>table{
+        margin: 4px 0;
         thead{
             user-select: none;
             background: #f1f9ff;
@@ -61,12 +67,14 @@
             border: 1px solid #c6cede;
             border-collapse: collapse;
             padding: 7px;
+            user-select: all;
         }
     }
     blockquote{
         background: #f5f9fd;
         margin: 2px;
         padding: 8px 10px;
+        font-size: 14px;
     }
     // 代码高亮
     .highlight{
@@ -80,13 +88,17 @@
             cursor: default;
             pre{
                 padding: 0;
-                margin: 0 5px;
+                // margin: 0 5px;
             }
             .line{
                  color: #999;
+                 text-align: right;
+                 margin-right: 10px;
             }
         }
         .code{
+            margin: 0;
+            padding: 0;
             .line{
                 font-size: 14px;
             }
@@ -95,6 +107,22 @@
     code{
         background: #fff8dc;
     }
+    ul, ol{
+        margin: 0;
+        padding: 2px 0 2px 20px;
+        li{
+            margin: 4px 0 2px 0;
+            color: #666;
+            p{
+                color: #666;
+            }
+        }
+    }
+    abbr[data-original-title], abbr[title] {
+        color: #2f95ec;
+        border-bottom: 1px dashed #2f95ec;  // 蚂蚁线
+        text-decoration: none;
+    }
 }
 // 底部页码
 div.pagination{
@@ -102,7 +130,7 @@ div.pagination{
     width: 100%;
     margin: 30px auto 60px auto;
     li{
-        font-size: 15px;
+        font-size: 20px;
         .glyphicon{
             margin: 0 5px;
         }
