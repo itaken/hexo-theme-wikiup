@@ -27,8 +27,16 @@
         font-size: 14px;
         float: right;
         margin-right: 10px;
-        color: #ccc;
         cursor: default;
+        background: #e6e5e5;
+        color: #fff;
+        height: 45px;
+        width: 45px;
+        border-radius: 25px;
+        padding: 8px 4px;
+        word-wrap: break-word;
+        word-break: break-word;
+        overflow: hidden;
     }
 }
 // 文章内容
@@ -130,7 +138,11 @@ div.pagination{
     width: 100%;
     margin: 30px auto 60px auto;
     li{
-        font-size: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        a{
+            padding: 4px 8px;
+        }
         .glyphicon{
             margin: 0 5px;
         }

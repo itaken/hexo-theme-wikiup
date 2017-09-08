@@ -5,10 +5,10 @@
                 <a href="<%= config.root %>" title="Home" alt="Home">
                     <lebal class="glyphicon glyphicon-th-list home"></lebal>
                 </a>
-                <a href="<%= page.url %>"><%= page.title %></a>
+                <a href="<%= url_for(page.path) %>"><%= page.title %></a>
                 <small class="text-right">
                     <time datetime="<%= page.date %>">
-                        <i class="glyphicon glyphicon-time"></i>&nbsp;<%= page.date.format(config.date_format) %>
+                        <%= page.date.format(config.date_format) %>
                     </time>
                 </small>
             </h1>
