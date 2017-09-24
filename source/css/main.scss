@@ -13,6 +13,9 @@ $browser-minimum-versions:("ie":"8");
 // 代码高亮
 @import "highlight.css";
 
+// 动画效果
+@import "animate.min.css";
+
 body{
     margin: 0;
     padding: 0;
@@ -21,6 +24,7 @@ body{
     width: 100%;
     // overflow: hidden;
     overflow-x: hidden;
+    min-width: 412px;
 }
 
 // 首页

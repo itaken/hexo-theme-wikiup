@@ -4,13 +4,9 @@
         <%= new Date().getFullYear() %>&nbsp;&copy;&nbsp;<%= config.author %>
         <% } else { %>
         <%= new Date().getFullYear() %>&nbsp;&copy;&nbsp;<%= config.title %>
-        <% } %>
-        . Theme by <a href="https://github.com/itaken/hexo-theme-wikiup/" title="Hexo-Theme-Wikiup" target="_blank">Wikiup</a>
+        <% } . Theme by <a href="https://github.com/itaken/hexo-theme-wikiup/" title="Hexo-Theme-Wikiup" target="_blank">Wikiup</a>
     </p>
-    <p>
-        <!-- analytics -->
-        <%- partial('google_analytics') %>
-    </p>
+    <p><%- partial('google_analytics') %></p>
 </footer>
 <script src="<%- config.root %>js/search.js"></script>
 <% if (config.search) { %>

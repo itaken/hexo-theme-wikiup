@@ -1,23 +1,24 @@
 <div class="pagination">
     <ul class="pagination">
-    	<% var last_post = [] %>
-    	<% var prev_post = [] %>
-    	<% var next_post = [] %>
-    	<% var is_cur = false %>
-    	<% if (page.categories != null) { %>
-    	<% site.posts.sort('date', -1).each(function(post){ %>
-    		<% if (post._id == page._id){ %>
-    			<% is_cur = true %>
-    			<% prev_post = last_post %>
-    		<% } else if (is_cur == false && ((post.categories.length == 0 && page.categories.length ==0) || (post.categories.length > 0 && page.categories.length > 0 && post.categories.data[0]._id == page.categories.data[0]._id))) { %>
-    			<% last_post = post %>
-    		<% } else if (is_cur == true && ((post.categories.length == 0 && page.categories.length ==0) || (post.categories.length > 0 && page.categories.length > 0 && post.categories.data[0]._id == page.categories.data[0]._id))) { %>
-    			<% next_post = post %>
-    			<% is_cur = false %>
-    			<% return false %>
-    		<% } %>
-    	<% }); %>
-    	<% } %>
+    	<%
+        var last_post = [], prev_post = [], next_post = [], is_cur = false;
+    	if (page.categories != null) {
+               var pglen = page.categories.length;
+    	       site.posts.sort('date', -1).each(function(post){
+                   var plen = post.categories.length;
+                   if (post._id == page._id){
+            			is_cur = true;
+            			prev_post = last_post;
+            		} else if (is_cur == false && ((plen == 0 && pglen ==0) || (plen > 0 && pglen > 0 && post.categories.data[0]._id == page.categories.data[0]._id))) {
+            			last_post = post;
+            		} else if (is_cur == true && ((plen == 0 && pglen ==0) || (plen > 0 && pglen > 0 && post.categories.data[0]._id == page.categories.data[0]._id))) {
+            			next_post = post;
+            			is_cur = false;
+            			return false;
+            		}
+        	});
+    	}
+        %>
     	<% if (prev_post.path) { %>
     		<li class="prev"><a href="<%- url_for(prev_post.path) %>" class="alignleft prev"><i class="glyphicon glyphicon-chevron-left"></i><%= __('prev') %></a></li>
     	<% } else { %>

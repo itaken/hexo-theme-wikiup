@@ -9,8 +9,8 @@
     if (page.category) title.push(page.category);
     if (page.tag) title.push(page.tag);
     if (page.archive){
-    if (page.year) title.push(__('archive_b', page.year + (page.month ? '/' + page.month : '')));
-    else title.push(__('archive_a'));
+        if (page.year) title.push(__('archive_b', page.year + (page.month ? '/' + page.month : '')));
+        else title.push(__('archive_a'));
     }
     title.push(config.title);
     %>
@@ -29,9 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
     <meta property="og:site_name" content="<%= config.title %>"/>
-    <% if (theme.favicon){ %>
-    <link href="<%- config.root %><%- theme.favicon %>" rel="icon">
-    <% } %>
+    <% if (theme.favicon){ %><link href="<%- config.root %><%- theme.favicon %>" rel="icon"><% } %>
     <link rel="stylesheet" href="<%- config.root %>css/main.css" media="screen" type="text/css">
     <script src="<%- config.root %>js/jquery-2.0.3.min.js"></script>
 </head>

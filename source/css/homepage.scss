@@ -70,7 +70,7 @@
         }
     }
 }
-// 查询结果
+// 最新添加
 .page-data{
     width: 100%;
     right: 0;
@@ -102,6 +102,11 @@
                 user-select: none;
                 li{
                     font-size: 18px;
+                    display: block;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     time{
                         padding: 0 2px;
                         cursor: default;
@@ -110,6 +115,7 @@
                     a{
                         cursor: pointer;
                         color: #27ae60;
+                        display: inline;
                     }
                     &:hover{
                         time{
