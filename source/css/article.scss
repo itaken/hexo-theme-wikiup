@@ -84,6 +84,10 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
                 color: #ddd;
                 content: "\1008";
             }
+            code{
+                // background: #f5f9fd;
+                color: $header-title-color;
+            }
         }
         a{
             margin-right: 5px;
@@ -130,6 +134,10 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
     del{
         color: #999;
         cursor: not-allowed;
+        text-decoration: line-through #c3c3c3;
+        code{
+            text-decoration: line-through #c7254e;
+        }
     }
     &>table{
         margin: 4px 0;
@@ -156,6 +164,8 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
         margin: 4px 2px;
         padding: 8px 10px;
         font-size: 14px;
+        border: 1px solid #eee;
+        border-left: 5px solid #eee;
         p > img{
             margin-left: 1em;
         }
@@ -260,7 +270,7 @@ div.pagination{
 #directory{
     position: fixed;
     right: -1px;
-    top: 58px;
+    top: 75px;
     background: rgba(240, 248, 255, 0.8);
     overflow: auto;
     z-index: 99;
