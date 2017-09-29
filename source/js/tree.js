@@ -93,9 +93,11 @@
             li = document.createElement('li');
             link = document.createElement('a');
             link.href = '#' + titleId[i];
-            link.innerHTML = !isDirNum ? contentArr[i] :
-                dirNum.join('.') + ' ' + contentArr[i] ;
+            var title = contentArr[i].replace(/(<([^>]+)>)/ig,"");  // 去除tag
+            link.innerHTML = !isDirNum ? title : dirNum.join('.') + ' ' + title ;
+            // console.log(title);
             li.appendChild(link);
+            // console.log(li);
             currentList.appendChild(li);
         }
         directory.appendChild(root);
@@ -117,7 +119,7 @@ function scroll( fn ) {
     }, false);
 }
 scroll(function(direction) {
-    console.log(direction);
+    // console.log(direction);
     if(document.body.offsetWidth < 767){  // 如果小屏幕,则不出现目录树
         document.getElementById("directory").style.display = "none";
         return;

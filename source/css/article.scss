@@ -63,13 +63,12 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
     h1{
         font-size: 32px;
         color: #333;
-        text-decoration: #ddd  underline double;
+        text-decoration: #ddd underline double;
         text-decoration-skip: ink;
         padding: 3px 0;
         &:hover{
-            // color: $header-title-color;
-            background: #ddd ;
-            text-decoration: none;
+            color: $header-title-color;
+            // text-decoration: $header-title-color underline double;
         }
     }
     h2{
@@ -80,7 +79,10 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
             color: $header-title-color;
             text-decoration: #ddd underline dashed;
             text-decoration-skip: ink;
-            a:before{
+            a{
+                color: $header-title-color;
+            }
+            a.headerlink:before{
                 color: #ddd;
                 content: "\1008";
             }
@@ -89,7 +91,7 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
                 color: $header-title-color;
             }
         }
-        a{
+        a.headerlink{
             margin-right: 5px;
             &:before{
                 color: $header-title-color;
@@ -249,6 +251,9 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
         border-bottom: 1px dashed #2f95ec;  // 蚂蚁线
         text-decoration: none;
     }
+    a{
+        cursor: pointer;
+    }
 }
 // 底部页码
 div.pagination{
@@ -307,10 +312,14 @@ div.pagination{
     & > ul,ol{
         margin: 30px 10px 20px 30px;
         // 二级目录
+        & > li > ul > li > a{
+            color: #2a882c;
+        }
+        // 三级及以上目录
         ul{
             li{
                 a{
-                    color: #2a882c;
+                    color: #86b59e;
                 }
             }
         }
