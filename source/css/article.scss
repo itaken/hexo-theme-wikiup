@@ -69,6 +69,11 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
         &:hover{
             color: $header-title-color;
             // text-decoration: $header-title-color underline double;
+            a.headerlink:before{
+                content: "¶";
+                color: $header-title-color;
+                text-decoration: #ddd underline double;
+            }
         }
     }
     h2{
@@ -82,10 +87,10 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
             a{
                 color: $header-title-color;
             }
-            a.headerlink:before{
-                color: #ddd;
-                content: "\1008";
-            }
+            // a.headerlink:before{
+            //     color: #ddd;
+            //     content: "\1008";
+            // }
             code{
                 // background: #f5f9fd;
                 color: $header-title-color;
@@ -171,8 +176,9 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
         p > img{
             margin-left: 1em;
         }
-        & > p{
-            text-indent: 2em;
+        p{
+            // text-indent: 2em;
+            color: #404040;
         }
     }
     pre > code{
@@ -254,6 +260,14 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
     a{
         cursor: pointer;
     }
+    menu{
+        padding: 0;
+        margin: 0;
+        font-size: 28px;
+        user-select: none;
+        cursor: default;
+        color: $header-title-color;
+    }
 }
 // 底部页码
 div.pagination{
@@ -310,7 +324,7 @@ div.pagination{
         cursor: pointer;
     }
     & > ul,ol{
-        margin: 30px 10px 20px 30px;
+        margin: 30px 20px 20px 30px;
         // 二级目录
         & > li > ul > li > a{
             color: #2a882c;
