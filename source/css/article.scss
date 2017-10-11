@@ -75,6 +75,9 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
                 text-decoration: #ddd underline double;
             }
         }
+        a.headerlink{
+            float: right;
+        }
     }
     h2{
         border-bottom: 1px solid #ccc;
@@ -263,10 +266,42 @@ $header-title-color: #27ae60;  // 头部标题颜色:绿色
     menu{
         padding: 0;
         margin: 0;
-        font-size: 28px;
+        font-size: 24px;
         user-select: none;
         cursor: default;
-        color: $header-title-color;
+        color: #333;
+    }
+    // 标签定义元素的细节
+    details{
+        color: #666;
+        text-indent: 2em;
+        summary{
+            color: #333;
+            text-indent: 0;
+            margin: 0 0 5px 0;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    // ruby 注释
+    ruby{
+        rt{
+            color: #999;
+        }
+    }
+    // 图例
+    figure{
+        figcaption{
+            color: #333;
+            font-weight: 700;
+        }
+        p{
+            text-indent: 2em;
+            color: #666;
+        }
     }
 }
 // 底部页码

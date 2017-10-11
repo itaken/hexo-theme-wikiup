@@ -41,7 +41,7 @@
     </div>
 </header>
 <%
-var posts = site.posts.sort('date', -1).limit(30) ;
+var posts = site.posts.sort('date', -1).limit(30);
 %>
 <div class="row page-data col-md-12">
     <div id="local-search-result"></div>
@@ -69,12 +69,14 @@ var posts = site.posts.sort('date', -1).limit(30) ;
 </div>
 <script src="<%- config.root %>js/search.js"></script>
 <% if (config.search) { %>
-   <script type="text/javascript">
-     var search_path = "<%= config.search.path %>";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "<%= config.root %>" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
+<script type="text/javascript">
+    var search_path = "<%= config.search.path %>";
+    if (search_path.length == 0) {
+    	search_path = "search.xml";
+    }
+    $("#local-search-input").wiki({
+        path: "<%= config.root %>" + search_path,
+        dirdom: '#local-search-result'
+    });
+</script>
 <% } %>

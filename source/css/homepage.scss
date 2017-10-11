@@ -18,11 +18,16 @@
                     }
                 }
             }
+            // 右上角 导航栏
             ul.nav{
                 a{
                     color: #d3fde5;
                     font-size: 1.1em;
                     font-weight: 700;
+                    &:hover{
+                        background-color: #eee;
+                        color: #27ae60;
+                    }
                 }
             }
         }
@@ -134,6 +139,12 @@
 }
 #local-search-result{
     margin: 10px 10px 29px 10px;
+    &>span{
+        font-size: 20px;
+        cursor: not-allowed;
+        user-select: none;
+        color: #f00;
+    }
     ul.search-result-list{
         text-decoration: none;
         list-style: none;
